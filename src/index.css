@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #FF0080 0%, #7928CA 100%);
+    --secondary-gradient: linear-gradient(135deg, #A8B8D8 0%, #627594 100%);
+    --success-gradient: linear-gradient(135deg, #98EC2D 0%, #17AD37 100%);
+    --info-gradient: linear-gradient(135deg, #21D4FD 0%, #2152FF 100%);
+    --warning-gradient: linear-gradient(135deg, #FBCF33 0%, #F53939 100%);
+    --danger-gradient: linear-gradient(135deg, #FF667C 0%, #EA0606 100%);
+    --dark-gradient: linear-gradient(135deg, #3A416F 0%, #141727 100%);
+    --light-gradient: linear-gradient(135deg, #EBEFF4 0%, #CED4DA 99.02%);
+
+    /* Basic Colors */
+    --color-primary: #CB0C9F;
+    --color-secondary: #8392AB;
+    --color-success: #82D616;
+    --color-info: #17C1E8;
+    --color-warning: #F53939;
+    --color-danger: #EA0606;
+    --color-dark: #252F40;
+    --color-light: #E9ECEF;
+    --color-white: #FFFFFF;
+
+    /* Fifty shades of Gray - LOL */
+    --color-gray-2: #FAFAFA;
+    --color-gray-3: #F5F5F5;
+    --color-gray-4: #F0F0F0;
+    --color-gray-5: #D9D9D9;
+    --color-gray-6: #BFBFBF;
+    --color-gray-7: #8C8C8C;
+    --color-gray-8: #595959;
+    --color-gray-9: #434343;
+    --color-gray-10: #262626;
+    --color-gray-11: #1F1F1F;
+    --color-gray-12: #141414;
+
+    /*  Light Mode Colors */
+    --app-light-bg: #F8F9FA;
+
+    /*  Dark mode Colors */
+    --app-dark-bg: #20272F;
+    --app-dark-primary: #2D343C;
+    --app-dark-seccondary: #3A414B;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--app-light-bg);
+}
+
+/* Font settings */
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.875rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: .875rem;
+}
+
+small {
+    font-size: .75rem;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 800;
+}
