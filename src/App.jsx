@@ -1,9 +1,27 @@
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { useAppContext } from './components/context/AppContext'
+import { Dashboard, LoginPage } from './pages'
 
-function App() {
+const App = () => {
+
+  const [credentials, setCredentials] = useAppContext()
+  const { isLogged } = credentials || false
+
   return (
-    <>
-      <h1>Cotizaciones Ciampi</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        {
+          !isLogged
+            ?
+            <>
+              <Route path='/login' element={<LoginPage />} />
+              <Route path='*' element={<Navigate to='/login' />} />
+            </>
+            :
+            <Route path='/*' element={<Dashboard />} />
+        }
+      </Routes>
+    </BrowserRouter>
   )
 }
 

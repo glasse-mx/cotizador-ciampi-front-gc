@@ -1,0 +1,26 @@
+.app__topbar {
+    display: flex;
+    background: var(--color-white);
+    border-bottom: 1px solid var(--black-10, rgba(28, 28, 28, 0.10));
+    padding: 1rem 2rem;
+    justify-content: space-between;
+}
+
+.app__topbar .user__info {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--app-light-color);
+}
+
+.app__topbar .app__breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--app-light-color);
+}
+
+.app__topbar .app__breadcrumbs .breadcrumbs__item {
+    display: flex;
+    align-items: center;
+}

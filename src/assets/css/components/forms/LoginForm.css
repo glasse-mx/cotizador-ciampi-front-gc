@@ -1,0 +1,39 @@
+.loginform__container {
+    max-width: 500px;
+    min-height: 400px;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 20px 27px 0px rgba(0, 0, 0, 0.05);
+}
+
+.loginform__container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.loginform__container .loader__container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.loginform__container .unauthorized__login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.loginform__container .unauthorized__login h3 {
+    color: var(--color-warning);
+}
